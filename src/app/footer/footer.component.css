@@ -1,0 +1,24 @@
+.page-footer{
+	margin-top: 15vh;
+	background-color: #90c226;
+}
+
+.container span{
+	font-size: 1.5em;
+	font-family: 'Hind',sans-serif;
+}
+
+.footer-copyright{
+	background-color: #7DA821;
+}
+
+#parceiros{
+	width: 20%;
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+#os{
+	width: 15%;
+	margin-left: 1.5em;
+}

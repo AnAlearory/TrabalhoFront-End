@@ -1,0 +1,14 @@
+/*Elementos*/
+nav ul{
+	padding-right: 2vw;
+}
+
+nav a img{
+	width: 60px;
+	height: 60px;
+}
+
+/*clases*/
+.nav-wrapper{
+	background-color: white;
+}
