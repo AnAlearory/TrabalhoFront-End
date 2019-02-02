@@ -1,0 +1,153 @@
+body{
+	background-color: #54a021;
+	overflow-x: hidden;
+}
+.apresentacao .container{
+	margin: 2em;
+	padding-left: 4vh;
+	font-family: 'Hind',sans-serif;
+	font-size: 2vh;
+}
+
+
+.nav-button{ 
+	margin-top: 25vh;
+	margin-left: 10vw;
+	font-family: 'Hind',sans-serif;
+	font-size: 2em;
+	padding-top: 18px;
+}
+
+.btn-large{
+	height: 8vh;
+	width: 18vw;
+	text-align: center;
+	background-color: #90c226;
+	transition: all 0.5s;
+}
+
+.btn-large:hover{
+	background-color: #CFBC1E;
+}
+
+.btn{
+	text-align: center;
+	background-color: #90c226;
+	transition: all 0.5s;
+}
+
+.btn:hover{
+	background-color: #CFBC1E;
+}
+
+.nav-button2{
+	margin-top: 26vh;
+	margin-left: 1vw; 
+	width: 10vw;
+}
+
+.nav-button3{
+	margin-left: 8vw;
+}
+
+.row.white{
+	margin-bottom: 20vh;
+}
+.row .col.s4.apresentacao{
+	margin-left: 4vw;
+}
+
+.card.small{
+	margin-top: 2vh;
+	position: relative;
+	animation: aparicao-destaques 2s ease;
+}
+
+.col.s3 span{
+	font-size: 2em;
+}
+
+.col.s4.emBreve{
+	margin-top: 25vh;
+	font-size: 2em;
+}
+
+.container span{
+	font-size: 1.5em;
+	font-family: 'Hind',sans-serif;
+}
+
+.footer-copyright{
+	background-color: #7DA821;
+}
+
+#arte{
+	position: relative;
+	animation: aparicao 4s ease-out;
+}
+#parceiros{
+	width: 20%;
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+#os{
+	width: 15%;
+	margin-left: 1.5em;
+}
+
+@keyframes aparicao{
+	0%  {transform: translateX(80px);
+		 opacity: 0.2;
+		}
+	100%{transform: translateX(0px);
+		 opacity: 1;
+		}
+}
+
+@keyframes aparicao-destaques{
+	0%  {transform: translateX(-80px);
+		 opacity: 0.2;
+		}
+	100%{transform: translateX(0px);
+		 opacity: 1;
+		}
+}
+
+@media screen and (max-width: 1880px){
+	#arte{
+		width: 80%;
+		height: 80%;
+	}
+
+	.nav-button{ 
+		margin-top: 20vh;
+		margin-left: 10vw;
+		font-family: 'Hind',sans-serif;
+		font-size: 1.5em;
+		padding-top: 3px;
+	}
+
+	.nav-button2{
+		margin-top: 20vh;
+		margin-left: 1vw; 
+		width: 10vw;
+	}
+
+	.col.s3 span{
+		font-size: 1.8em;
+	}
+
+	.col.s4.emBreve{
+	margin-top: 22vh;
+	font-size: 2em;
+	}
+
+	div.s4.apresentacao span{
+		font-size: 1.5em;
+	}
+
+	div.s4.apresentacao{
+		margin-top: 3vh;
+	}
+
+}

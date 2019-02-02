@@ -1,0 +1,44 @@
+<body>
+	<div class="container white z-depth-1">
+		<h1>Fale Conosco!</h1>
+		<h2>Envie uma mensagem e tire qualquer duvida!</h2>
+		<div class="row">
+	    	<form #contato="ngForm" class="col s12" (ngSubmit)="onSubmit(contato)">
+	     		<div class="row">
+	        		<div class="input-field col 8 m5">
+	          			<input id="first_name" type="text" class="validate">
+	          			<label for="first_name">Nome</label>
+	        		</div>
+	        		<div class="input-field col 8 m5">
+	          			<input id="last_name" type="text" class="validate">
+	          			<label for="last_name">Sobrenome</label>
+	        		</div>
+	       		</div>
+	       		<div class="row">
+	        		<div class="input-field col 8 m5">
+	          			<input id="email" type="email" class="validate" name="email" ngModel required #email="ngModel">
+	          			<label for="email" data-error="Coloque um Email valido">Email</label>
+	        		</div>
+	        	</div>
+	        	<div class="row">
+          			<div class="input-field col 12 m10">
+            			<textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+            			<label for="textarea2">Textarea</label>
+          			</div>
+        		</div>
+	       	</form>
+		</div>
+		<div class="row">
+			<button class="btn waves-effect waves-light right" type="submit" [disabled]="email.invalid" name="action">Enviar</button>
+		</div>
+		<div class="row facebook">
+			<div>
+				<h2>Também estamos no facebook!</h2>
+				<a href="https://www.facebook.com/PECEP-234254726639324/"><img src="/assets/facebook.png"></a>
+			</div>		
+		</div>
+		<div *ngIf="email.invalid">
+			<p>Campo Obrigatorio</p>
+		</div>
+    </div>
+</body>
