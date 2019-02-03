@@ -1,7 +1,7 @@
 body{
 	background-color: #54a021;
 	background-image: url(/assets/conheca.jpg/);
-	background-size: 70%;
+	background-size: 66%;
 	background-repeat: no-repeat;
 	background-position: top;
 	background-attachment: fixed; 
@@ -31,4 +31,16 @@ p{
 
 #negrito{
 	font-weight: 600;
+}
+
+@media screen and (max-width: 1880px){
+	body{
+		background-color: #54a021;
+		background-image: url(/assets/conheca.jpg/);
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position: top;
+		background-attachment: fixed; 
+		overflow-x: hidden;
+	}
 }
